@@ -14,7 +14,7 @@ class AppComponent extends Component {
       const { results: pokemonList } = (await response.json()) as {
         results: PokemonData[];
       };
-      console.log(pokemonList);
+
       this.pokemonList = pokemonList;
       this.renderPokemonList();
     })();
