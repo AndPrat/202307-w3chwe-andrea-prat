@@ -1,4 +1,4 @@
-class Component {
+abstract class Component {
   element: Element;
 
   constructor(
@@ -8,7 +8,11 @@ class Component {
   ) {
     this.element = document.createElement(tag);
     this.element.className = className;
+
+    parentElement.append(this.element);
   }
+
+  abstract render(): void;
 }
 
 export default Component;
