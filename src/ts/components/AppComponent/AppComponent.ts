@@ -22,13 +22,15 @@ class AppComponent extends Component {
 
   render() {
     this.element.innerHTML = `
-    <header>
-      <h1>Pokédex</h1>
-    </header>
     <main>
-      <section>
-        <h2></h2>
-        <ul class="pokemon-list"></ul>
+      <section class="pokemons-container">
+        <picture class="pokeball">
+          <img src="img/pokeball.png" alt="Pokeball" loading="eager">
+        </picture>
+        <div class="pokemons-container__content">
+          <h1>Pokédex</h1>
+          <ul class="pokemon-list"></ul>
+        </div>
       </section>
     </main>
     `;
