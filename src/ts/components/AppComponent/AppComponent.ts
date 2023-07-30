@@ -1,4 +1,4 @@
-import PokemonCardComponent from "../../PokemonCardComponent/PokemonCardComponent.js";
+import PokemonListItemComponent from "../../PokemonListItemComponent/PokemonListItemComponent.js";
 import urlPokeApi from "../../globals.js";
 import { type PokemonData } from "../../type.js";
 import Component from "../Component/Component.js";
@@ -38,7 +38,7 @@ class AppComponent extends Component {
     const pokemonItemsList = document.querySelector(".pokemon-list")!;
     this.pokemonList.forEach((pokemon) => {
       const pokemonItemList = document.createElement("li");
-      new PokemonCardComponent(pokemonItemList, pokemon).render();
+      new PokemonListItemComponent(pokemonItemList, pokemon).render();
       pokemonItemsList.append(pokemonItemList);
     });
   }
