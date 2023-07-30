@@ -6,7 +6,6 @@
 
 1. Component
 2. AppComponent
-3. PokemonListComponent
-4. PokemonCardComponent
-5. ButtonComponent
-6. GlobalsComponent
+3. PokemonCardComponent
+4. ButtonComponent
+5. GlobalsComponent
