@@ -1,0 +1,46 @@
+* ::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  background-color: #fb4655;
+}
+
+h1 {
+  padding: 30px;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: #ffffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pokemon-list-item {
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.pokemon-list-item:hover {
+  transform: translateX(10px);
+}
+
+.pokemon-list-item h2 {
+  margin: 10px 0;
+}
