@@ -1,5 +1,6 @@
-export interface PokemonListData {
-  listData: PokemonData[];
+export interface PokemonAccesList {
+  name: string;
+  url: string;
 }
 
 export interface PokemonData {
