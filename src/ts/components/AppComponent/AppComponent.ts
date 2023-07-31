@@ -25,7 +25,8 @@ class AppComponent extends Component {
     <main>
       <section class="pokemons-container">
         <picture class="pokeball">
-          <img src="img/pokeball.png" alt="Pokeball" loading="eager">
+          <source srcset="img/pokeball.webp" type="image/webp">
+          <img src="img/pokeball.png" alt="Pokeball" loading="eager" fetchpriority="high">
         </picture>
         <div class="pokemons-container__content">
           <h1>Pokédex</h1>
