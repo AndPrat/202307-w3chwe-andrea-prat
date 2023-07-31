@@ -11,9 +11,7 @@ class PokemonListItemComponent extends Component {
 
   render() {
     this.element.innerHTML = `
-    <a href="${this.pokemon.url}" title="${this.pokemon.name}">
-      <h2 class="pokemon__name">${this.pokemon.name}</h2>
-    </a>
+    <h2 class="pokemon__name">${this.pokemon.name}</h2>
     `;
   }
 }
